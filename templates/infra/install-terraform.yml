@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 
 steps:
- - task: TerraformInstaller@0
-   displayName: 'Terraform install'
+ - task: charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-installer.TerraformInstaller@0
+   displayName: 'Use Terraform latest'
    inputs:
      terraformVersion: $(terraform_version)
